@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  operator: 
+  latitude: 
+  longitude: 
+  2g: 
+  3g: 
+  4g: MyString
+
+two:
+  operator: 
+  latitude: 
+  longitude: 
+  2g: 
+  3g: 
+  4g: MyString
