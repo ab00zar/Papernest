@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple Rails 5 api app to check the coverage of French mobile operators based on the given address.
 
-Things you may want to cover:
+Some points to mention:
 
-* Ruby version
+*  I deployed it on Heroku here: http://papernest.herokuapp.com 
 
-* System dependencies
+* You can try GET ../closest/your address... which returns one result for each operator based on the closest location registered in the database (csv file) from the searched address.
 
-* Configuration
+* You can also try GET ../all/your address ... that returns all the results within 10 KM around the searched address.
 
-* Database creation
+* I developed a function to convert Lambert 93 to GPS coordinates as the input.csv file includes Lambert93 locations.
 
-* Database initialization
+* It is deployed on Heroku free plan and as the data inserted to the database exceeded the maximum allowed number of rows, Heroku might remove some data in the near future which affects my app and its results.
 
-* How to run the test suite
+* You can play with it using HTTPie (https://httpie.org)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Any feedbak or comment is appreciated. 
