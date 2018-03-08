@@ -15,7 +15,6 @@ class CoveragesController < ApplicationController
     # GET /all/:id It returns all the results based on the registered locations which are around 10 KM of the searching address 
     def all
         @coverage = Coverage.near(params[:id], 10, :units => :km, :order => "distance")
-        #json_response(@coverage)
         result = Array.new
         @coverage.each do |c|
             result.push("Operator" => c.operator, "2G" => c.g2, "3G" => c.g3, "4G" => c.g4, "distance" => c.distance)
